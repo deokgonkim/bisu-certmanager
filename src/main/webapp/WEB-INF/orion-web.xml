@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<orion-web-app
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-web-10_0.xsd"        deployment-version="10.1.3.3.0"
+        deployment-time="1252561676606"
+        jsp-cache-directory="./persistence"
+        jsp-cache-tlds="standard"
+        temporary-directory="./temp"
+        context-root="certmanager"
+ schema-major-version="10" schema-minor-version="0" >
+        <!-- Uncomment this element to control web application class loader behavior.
+                <web-app-class-loader search-local-classes-first="true"  include-war-manifest-class-path="true" />
+        -->
+        <security-role-mapping name="DBSUser" >
+            <group name="DBSUser" />
+        </security-role-mapping>
+        <web-app>
+        </web-app>
+</orion-web-app>
